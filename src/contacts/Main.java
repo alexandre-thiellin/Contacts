@@ -8,14 +8,11 @@ public class Main {
 
 
         PhoneBook phoneBook;
-        Arrays.stream(args).forEach(System.out::println);
-        if(args != null) {
-            if(args.length != 0) {
-                phoneBook = new PhoneBook(args[0]);
-            } else {
-                phoneBook = new PhoneBook();
-            }
-            phoneBook.run();
+        if(args.length != 0) {
+            phoneBook = new PhoneBook(args[0]);
+        } else {
+            phoneBook = new PhoneBook();
         }
+        phoneBook.run();
     }
 }

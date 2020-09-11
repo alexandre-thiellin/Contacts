@@ -57,7 +57,7 @@ public class Person extends Record {
 
     private boolean checkGender(String gender) {
 
-        Pattern pattern = Pattern.compile("M|F");
+        Pattern pattern = Pattern.compile("[MF]");
 
         Matcher matcher = pattern.matcher(gender);
 
